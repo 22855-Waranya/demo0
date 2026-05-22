@@ -56,3 +56,199 @@
             height: 100%;
             border-radius: 50%;
             object-fit: cover;
+            border: 4px solid #ff69b4;
+            box-shadow: 0 8px 20px rgba(255, 105, 180, 0.3);
+        }
+
+        .badge {
+            position: absolute;
+            bottom: 5px;
+            right: 5px;
+            background-color: #ff69b4;
+            color: white;
+            width: 35px;
+            height: 35px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 16px;
+            border: 3px solid white;
+        }
+
+        h1 {
+            font-family: 'Mitr', sans-serif;
+            color: #4a4a4a;
+            font-size: 26px;
+            margin-bottom: 5px;
+        }
+
+        .nickname {
+            color: #ff69b4;
+            font-weight: 600;
+            font-size: 18px;
+            margin-bottom: 30px;
+            background: #ffe5f4;
+            display: inline-block;
+            padding: 5px 20px;
+            border-radius: 20px;
+        }
+
+        .info-box {
+            background: white;
+            border-radius: 20px;
+            padding: 20px;
+            box-shadow: inset 0 2px 8px rgba(0,0,0,0.02);
+        }
+
+        .info-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 18px;
+            padding-bottom: 12px;
+            border-bottom: 1px dashed #ffd1eb;
+        }
+
+        .info-item:last-child {
+            margin-bottom: 0;
+            padding-bottom: 0;
+            border-bottom: none;
+        }
+
+        .icon-wrap {
+            width: 40px;
+            height: 40px;
+            background: #ffe5f4;
+            border-radius: 12px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-right: 15px;
+        }
+
+        .icon-wrap i {
+            color: #ff69b4;
+            font-size: 18px;
+        }
+
+        .info-text {
+            text-align: left;
+        }
+
+        .info-label {
+            font-size: 12px;
+            color: #a0a0a0;
+            display: block;
+            text-transform: uppercase;
+        }
+
+        .info-value {
+            font-size: 16px;
+            color: #555;
+            font-weight: 600;
+        }
+
+        .color-dot {
+            display: inline-block;
+            width: 14px;
+            height: 14px;
+            background-color: #ff69b4;
+            border-radius: 50%;
+            margin-left: 5px;
+            vertical-align: middle;
+            border: 2px solid #fff;
+            box-shadow: 0 0 5px rgba(0,0,0,0.2);
+        }
+
+        .footer {
+            margin-top: 25px;
+            font-size: 12px;
+            color: #b5b5b5;
+        }
+
+        .footer i {
+            color: #ff69b4;
+            animation: heartbeat 1.2s infinite;
+        }
+
+        @keyframes heartbeat {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.1); }
+            100% { transform: scale(1); }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="profile-card">
+        <div class="avatar-container">
+            <img class="avatar" src="https://images.unsplash.com/photo-1618673751163-6895d43f06fb?w=400&auto=format&fit=crop&q=60" alt="Asia Profile">
+            <div class="badge">
+                <i class="fa-solid fa-star"></i>
+            </div>
+        </div>
+
+        <h1>ด.ญ.วรัญญา ไชยวงศ์</h1>
+        <div class="nickname">ชื่อเล่น: น้องเอเชีย</div>
+
+        <div class="info-box">
+            
+            <div class="info-item">
+                <div class="icon-wrap">
+                    <i class="fa-solid fa-cake-candles"></i>
+                </div>
+                <div class="info-text">
+                    <span class="info-label">วันเกิด</span>
+                    <span class="info-value">13 สิงหาคม 2554</span>
+                </div>
+            </div>
+
+            <div class="info-item">
+                <div class="icon-wrap">
+                    <i class="fa-solid fa-utensils"></i>
+                </div>
+                <div class="info-text">
+                    <span class="info-label">อาหารที่ชอบ</span>
+                    <span class="info-value">ข้าวขาหมู</span>
+                </div>
+            </div>
+
+            <div class="info-item">
+                <div class="icon-wrap">
+                    <i class="fa-solid fa-palette"></i>
+                </div>
+                <div class="info-text">
+                    <span class="info-label">สีที่ชอบ</span>
+                    <span class="info-value">สีชมพู <span class="color-dot"></span></span>
+                </div>
+            </div>
+
+            <div class="info-item">
+                <div class="icon-wrap">
+                    <i class="fa-solid fa-book-open"></i>
+                </div>
+                <div class="info-text">
+                    <span class="info-label">วิชาที่ชอบ</span>
+                    <span class="info-value">วิทยาศาสตร์, คณิตศาสตร์</span>
+                </div>
+            </div>
+
+            <div class="info-item">
+                <div class="icon-wrap">
+                    <i class="fa-solid fa-user-group"></i>
+                </div>
+                <div class="info-text">
+                    <span class="info-label">เพื่อนสนิท</span>
+                    <span class="info-value">เจดดุ้ย</span>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="footer">
+            Made with <i class="fa-solid fa-heart"></i> for Asia
+        </div>
+    </div>
+
+</body>
+</html>
